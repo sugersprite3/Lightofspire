@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WWW.LightOfSpire.com</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    @keyframes scrollBg {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 1000px 0;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      color: #0d1b2a;
+      text-align: center;
+      background-image: url('https://sugaryspire.wiki.gg/images/thumb/Bg_secretArea.png/300px-Bg_secretArea.png?434351');
+      background-repeat: repeat-x;
+      background-size: auto 100%;
+      background-position: 0 0;
+      animation: scrollBg 60s linear infinite;
+    }
+
+    header {
+      background: rgba(30, 64, 175, 0.85);
+      padding: 20px;
+      box-shadow: 0 4px 8px #3b82f6aa;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      letter-spacing: 0.1em;
+      color: #dbeafe;
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: #dbeafe;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: #2563eb;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background: #1e40af;
+    }
+
+    .music-button {
+      margin-top: 10px;
+      font-size: 12px;
+      font-family: 'Press Start 2P', cursive;
+      padding: 10px 16px;
+      background: #60a5fa;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #1e3a8a;
+    }
+
+    main {
+      max-width: 700px;
+      margin: auto;
+      background: rgba(224, 231, 255, 0.9);
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 0 10px #3b82f6cc;
+      color: #1e40af;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .blog-post, .gallery-item {
+      background: #bfdbfe;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px #60a5fa;
+      color: #1e3a8a;
+    }
+
+    .gif-banner {
+      margin: 15px 0;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 10px;
+      font-size: 0.8rem;
+      color: #1e40af;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hidden audio -->
+  <audio id="bgMusic" loop>
+    <source src="https://nu.vgmtreasurechest.com/soundtracks/sugary-spire-exhibition-night-unofficial-soundtrack-2024/rnohuzrh/38%20-%20Run%20the%20Dog%20%28Bonus%29.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Music Button -->
+  <button class="music-button" onclick="document.getElementById('bgMusic').play()">Play Music 🎵</button>
+
+  <header>
+    <h1>Suger's Wonderful Website</h1>
+
+    <div class="gif-banner">
+      <img src="https://blob.gifcities.org/gifcities/32FN26WHQ2UCSLEPET4XCNEAJ5MH4QJF.gif" alt="GIF Banner">
+    </div>
+
+    <nav>
+      <a href="#blog">Blog</a>
+      <a href="#gallery">coming soon!</a>
+      <a href="https://discord.gg/YaQZR5uzAV" target="_blank" rel="noopener noreferrer">Discord server</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="welcome">
+      <h2>hey Developer work on this please</h2>
+      <p>W.I.P</p>
+      <div class="gif-banner">
+        <img src="https://blob.gifcities.org/gifcities/32FN26WHQ2UCSLEPET4XCNEAJ5MH4QJF.gif" alt="GIF Banner">
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2>Latest Blog Posts</h2>
+      <article class="blog-post">
+        <h3>My New PC</h3>
+        <p>i just brought my own PC for 100$ hope this really worth it...</p>
+      </article>
+    </section>
+
+    <section id="gallery">
+      <h2>Fan Art Gallery</h2>
+      <div class="gallery-item">total art: 0</div>
+      <div class="gallery-item">Send me Image in the art in discord server! </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 website by Suger S suger</p>
+  </footer>
+
+</body>
+</html>
